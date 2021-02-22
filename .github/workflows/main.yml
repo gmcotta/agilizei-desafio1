@@ -53,3 +53,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH: gh-pages
         FOLDER: mochawesome-report  
+      env:
+        ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
+
+
