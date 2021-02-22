@@ -3,5 +3,9 @@
   "baseUrl": "http://automationpractice.com/index.php",
   "watchForFileChanges": false,
   "experimentalSourceRewriting": true,
-  "video": true
+  "video": true,
+  "reporter": "cypress-multi-reporters",
+  "reporterOptions": {
+    "configFile": "reporter-config.json"
+  }
 }
