@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-02-22T01:23:23.822Z",
+    "end": "2021-02-22T01:23:39.111Z",
+    "duration": 15289,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "88184147-295c-4ca9-9b59-ef2b98450747",
+      "title": "",
+      "fullFile": "cypress/integration/cadastro.spec.js",
+      "file": "cypress/integration/cadastro.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c3105974-4bcc-49e5-a2df-c5214422cbfc",
+          "title": "Criar cadastro",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Deve criar o cadastro",
+              "fullTitle": "Criar cadastro Deve criar o cadastro",
+              "timedOut": null,
+              "duration": 15215,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// cy.visit('?controller=authentication&back=my-account');\ncy.visit('/');\ncy.get('a.login').click();\ncy.get('#email_create').type(chance.email());\ncy.get('#SubmitCreate').click();\ncy.get('#uniform-id_gender1').click();\ncy.get('#customer_firstname').type(chance.first());\ncy.get('#customer_lastname').type(chance.last());\ncy.get('#passwd').type('12345');\ncy.get('#address1').type(chance.address());\ncy.get('#city').type(chance.city());\ncy.get('#id_state').select(chance.state({\n  full: true\n}));\ncy.get('#postcode').type(chance.zip());\ncy.get('#phone_mobile').type(chance.phone({\n  formatted: false\n}));\ncy.get('#alias').type('Meu teste');\ncy.get('#submitAccount').click();\ncy.get('p.info-account').should('contain', 'Welcome to your account.');",
+              "err": {},
+              "uuid": "0fc8ccfa-5d31-4e3f-b08c-8ce237836bdb",
+              "parentUUID": "c3105974-4bcc-49e5-a2df-c5214422cbfc",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0fc8ccfa-5d31-4e3f-b08c-8ce237836bdb"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 15215,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": true,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "mochawesome-report",
+        "quiet": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
