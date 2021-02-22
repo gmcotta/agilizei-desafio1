@@ -3,5 +3,5 @@
   "baseUrl": "http://automationpractice.com/index.php",
   "watchForFileChanges": false,
   "experimentalSourceRewriting": true,
-  "video": false
+  "video": true
 }
