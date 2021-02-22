@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-02-22T01:23:23.822Z",
-    "end": "2021-02-22T01:23:39.111Z",
-    "duration": 15289,
+    "start": "2021-02-22T01:58:10.872Z",
+    "end": "2021-02-22T01:58:27.258Z",
+    "duration": 16386,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "88184147-295c-4ca9-9b59-ef2b98450747",
+      "uuid": "dc911d19-826a-42a7-bd4a-245127a8d7d8",
       "title": "",
       "fullFile": "cypress/integration/cadastro.spec.js",
       "file": "cypress/integration/cadastro.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "c3105974-4bcc-49e5-a2df-c5214422cbfc",
+          "uuid": "348a232e-097e-48ce-b216-d05ada4a5346",
           "title": "Criar cadastro",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Deve criar o cadastro",
               "fullTitle": "Criar cadastro Deve criar o cadastro",
               "timedOut": null,
-              "duration": 15215,
+              "duration": 16319,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "// cy.visit('?controller=authentication&back=my-account');\ncy.visit('/');\ncy.get('a.login').click();\ncy.get('#email_create').type(chance.email());\ncy.get('#SubmitCreate').click();\ncy.get('#uniform-id_gender1').click();\ncy.get('#customer_firstname').type(chance.first());\ncy.get('#customer_lastname').type(chance.last());\ncy.get('#passwd').type('12345');\ncy.get('#address1').type(chance.address());\ncy.get('#city').type(chance.city());\ncy.get('#id_state').select(chance.state({\n  full: true\n}));\ncy.get('#postcode').type(chance.zip());\ncy.get('#phone_mobile').type(chance.phone({\n  formatted: false\n}));\ncy.get('#alias').type('Meu teste');\ncy.get('#submitAccount').click();\ncy.get('p.info-account').should('contain', 'Welcome to your account.');",
               "err": {},
-              "uuid": "0fc8ccfa-5d31-4e3f-b08c-8ce237836bdb",
-              "parentUUID": "c3105974-4bcc-49e5-a2df-c5214422cbfc",
+              "uuid": "17f1cb75-60d9-4569-b416-b5fbb877d158",
+              "parentUUID": "348a232e-097e-48ce-b216-d05ada4a5346",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "0fc8ccfa-5d31-4e3f-b08c-8ce237836bdb"
+            "17f1cb75-60d9-4569-b416-b5fbb877d158"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 15215,
+          "duration": 16319,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
